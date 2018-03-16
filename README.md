@@ -1,2 +1,3 @@
-# ex_list_diff_benchmark
-Benchmarking `Kernel.--` vs `Map.intersection` method
+# ExBenchmark
+
+Benchmarking various implementations in Elixir.
