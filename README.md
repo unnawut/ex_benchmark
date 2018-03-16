@@ -2,6 +2,12 @@
 
 Benchmarking various implementations in Elixir.
 
+## Usage
+
+1. Clone this repo: `git@github.com:unnawut/ex_benchmark.git`
+2. Install dependencies: `mix deps.get`
+3. Run benchmark: `mix benchmark`
+
 ## Latest result
 
 ```
