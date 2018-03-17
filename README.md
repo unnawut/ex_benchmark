@@ -61,3 +61,9 @@ benchmark_map_set_intersection_heavy_left      0.00005 M - 492410.91x slower
 benchmark_map_set_intersection_heavy_right     0.00005 M - 525508.42x slower
 benchmark_map_set_intersection_large           0.00002 M - 1340793.01x slower
 ```
+
+## TODOs
+- `Regex` vs. `String` functions
+- `Map.get/3`, `Map.fetch/2`, `Access.get/3` vs. pattern matching (https://medium.com/learn-elixir/speed-up-data-access-in-elixir-842617030514)
+- `Map` vs. `Keyword`
+- `Enum.empty?/1` vs `== []` or `== %{}`
