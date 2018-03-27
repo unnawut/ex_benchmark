@@ -4,9 +4,10 @@ defmodule Mix.Tasks.Benchmark do
   @shortdoc "Runs the benchmark"
 
   @default_modules [
+    ExBenchmark.Scenario.EnumCheckEmpty,
     ExBenchmark.Scenario.ListDiff,
     ExBenchmark.Scenario.ListConcat,
-    ExBenchmark.Scenario.ListAddOne
+    ExBenchmark.Scenario.ListPrependOne
   ]
 
   @doc false

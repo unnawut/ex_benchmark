@@ -1,6 +1,6 @@
-defmodule ExBenchmark.Scenario.ListAddOne do
+defmodule ExBenchmark.Scenario.ListPrependOne do
   @moduledoc """
-  The module containing scenarios to benchmark adding an item to a list.
+  The module containing scenarios to benchmark prepending an item to a list.
   """
   use ExBenchmark.Scenario, time: 10, print: [fast_warning: false]
 

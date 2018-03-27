@@ -1,19 +1,46 @@
 # Latest results
 
+## Host info
+
 ```
-$ mix benchmark
 Operating System: macOS
 CPU Information: Intel(R) Core(TM) i5-7360U CPU @ 2.30GHz
 Number of Available Cores: 4
 Available memory: 16 GB
 Elixir 1.6.4
 Erlang 20.2.4
-Benchmark suite executing with the following configuration:
-warmup: 2 s
-time: 10 s
-parallel: 1
-inputs: none specified
-Estimated total run time: 2 min
+```
+
+## Results
+
+```
+Name                               ips        average  deviation         median         99th %
+equality_on_large_list         27.93 M      0.0358 μs    ±71.35%      0.0350 μs      0.0650 μs
+equality_on_large_map          27.43 M      0.0365 μs   ±117.60%      0.0350 μs      0.0730 μs
+equality_on_empty_map          26.90 M      0.0372 μs    ±94.47%      0.0350 μs      0.0790 μs
+equality_on_empty_list         25.54 M      0.0392 μs   ±377.55%      0.0350 μs      0.0920 μs
+enum_empty_on_empty_list       20.87 M      0.0479 μs    ±66.20%      0.0450 μs      0.0990 μs
+enum_empty_on_large_list       20.47 M      0.0489 μs   ±133.05%      0.0440 μs       0.106 μs
+enum_count_on_empty_list       18.17 M      0.0550 μs   ±190.27%      0.0460 μs       0.124 μs
+enum_empty_on_empty_map         0.40 M        2.51 μs  ±2906.95%           2 μs           9 μs
+enum_count_on_large_map         0.40 M        2.53 μs  ±3143.48%           2 μs           9 μs
+enum_count_on_empty_map         0.39 M        2.58 μs  ±3310.69%           2 μs           9 μs
+enum_empty_on_large_map         0.39 M        2.59 μs  ±2979.60%           2 μs           9 μs
+enum_count_on_large_list      0.0778 M       12.85 μs    ±42.75%          12 μs       26.45 μs
+
+Comparison:
+equality_on_large_list         27.93 M
+equality_on_large_map          27.43 M - 1.02x slower
+equality_on_empty_map          26.90 M - 1.04x slower
+equality_on_empty_list         25.54 M - 1.09x slower
+enum_empty_on_empty_list       20.87 M - 1.34x slower
+enum_empty_on_large_list       20.47 M - 1.36x slower
+enum_count_on_empty_list       18.17 M - 1.54x slower
+enum_empty_on_empty_map         0.40 M - 70.12x slower
+enum_count_on_large_map         0.40 M - 70.50x slower
+enum_count_on_empty_map         0.39 M - 71.97x slower
+enum_empty_on_large_map         0.39 M - 72.30x slower
+enum_count_on_large_list      0.0778 M - 358.90x slower
 
 
 Name                                       ips        average  deviation         median         99th %
